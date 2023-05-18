@@ -11,8 +11,10 @@ Alternatively, for a first-time Rust learner, there are several other resources:
 
 ## Getting Started
 
-_Note: If you're on MacOS, make sure you've installed Xcode and its developer tools by typing `xcode-select --install`._
-_Note: If you're on Linux, make sure you've installed gcc. Deb: `sudo apt install gcc`. Yum: `sudo yum -y install gcc`._
+- Solutions <a href='https://github.com/akhildevelops/2022-rustlings-solutions/blob/main/exercises/conversions/from_str.rs'>here</a>
+
+  _Note: If you're on MacOS, make sure you've installed Xcode and its developer tools by typing `xcode-select --install`._
+  _Note: If you're on Linux, make sure you've installed gcc. Deb: `sudo apt install gcc`. Yum: `sudo yum -y install gcc`._
 
 You will need to have Rust installed. You can get it by visiting https://rustup.rs. This'll also install Cargo, Rust's package/project manager.
 
@@ -23,6 +25,7 @@ Just run:
 ```bash
 curl -L https://raw.githubusercontent.com/rust-lang/rustlings/main/install.sh | bash
 ```
+
 Or if you want it to be installed to a different path:
 
 ```bash

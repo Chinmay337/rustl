@@ -3,6 +3,29 @@
 // You can read more about it at https://doc.rust-lang.org/std/convert/trait.From.html
 // Execute `rustlings hint from_into` or use the `hint` watch subcommand for a hint.
 
+/*
+Example Using and implementing into()
+
+struct MyType;
+
+struct OtherType {
+    data: u32,
+}
+
+impl Into<OtherType> for MyType {
+    fn into(self) -> OtherType {
+        OtherType { data: 42 }
+    }
+}
+
+fn main() {
+    let my_value = MyType;
+    let other_value: OtherType = my_value.into();
+    println!("The data value is: {}", other_value.data);
+}
+
+*/
+
 #[derive(Debug)]
 struct Person {
     name: String,
@@ -39,6 +62,33 @@ impl Default for Person {
 
 impl From<&str> for Person {
     fn from(s: &str) -> Person {
+        if s == "" {
+            Person::default()
+        } else {
+            s.split(",")
+                .map(|x| x.into())
+                .collect::<Vec<String>>()
+                .into()
+        }
+    }
+}
+
+impl From<Vec<String>> for Person {
+    fn from(s: Vec<String>) -> Self {
+        if s.len() != 2 {
+            return Person::default();
+        }
+        let number = s[1].parse();
+        let age;
+        if number.is_err() || s[0] == "" {
+            Person::default()
+        } else {
+            age = number.unwrap();
+            Person {
+                name: s[0].clone(),
+                age: age,
+            }
+        }
     }
 }
 
