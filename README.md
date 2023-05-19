@@ -1,6 +1,8 @@
 # rustlings 🦀❤️
 
-Greetings and welcome to `rustlings`. This project contains small exercises to get you used to reading and writing Rust code. This includes reading and responding to compiler messages!
+- Solutions <a href='https://github.com/akhildevelops/2022-rustlings-solutions/blob/main/exercises/conversions/from_str.rs'>here</a>
+
+- Greetings and welcome to `rustlings`. This project contains small exercises to get you used to reading and writing Rust code. This includes reading and responding to compiler messages!
 
 _...looking for the old, web-based version of Rustlings? Try [here](https://github.com/rust-lang/rustlings/tree/rustlings-1)_
 
@@ -11,10 +13,8 @@ Alternatively, for a first-time Rust learner, there are several other resources:
 
 ## Getting Started
 
-- Solutions <a href='https://github.com/akhildevelops/2022-rustlings-solutions/blob/main/exercises/conversions/from_str.rs'>here</a>
-
-  _Note: If you're on MacOS, make sure you've installed Xcode and its developer tools by typing `xcode-select --install`._
-  _Note: If you're on Linux, make sure you've installed gcc. Deb: `sudo apt install gcc`. Yum: `sudo yum -y install gcc`._
+_Note: If you're on MacOS, make sure you've installed Xcode and its developer tools by typing `xcode-select --install`._
+_Note: If you're on Linux, make sure you've installed gcc. Deb: `sudo apt install gcc`. Yum: `sudo yum -y install gcc`._
 
 You will need to have Rust installed. You can get it by visiting https://rustup.rs. This'll also install Cargo, Rust's package/project manager.
 
