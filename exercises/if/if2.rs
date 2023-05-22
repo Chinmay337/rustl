@@ -7,11 +7,17 @@
 // I AM NOT DONE
 
 pub fn foo_if_fizz(fizzish: &str) -> &str {
-    if fizzish == "fizz" {
-        "foo"
-    } else {
-        1
+    match fizzish {
+        "fizz" => "foo",
+        "fuzz" => "bar",
+        _ => "baz",
     }
+    // if fizzish == "fizz" {
+    //     return "foo";
+    // } else if fizzish == "fuzz" {
+    //     return "bar";
+    // }
+    // "baz"
 }
 
 // No test changes needed!
