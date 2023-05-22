@@ -1,6 +1,6 @@
 # rustlings 🦀❤️
 
-- Solutions <a href='https://github.com/akhildevelops/2022-rustlings-solutions/blob/main/exercises/conversions/from_str.rs'>here</a>
+- Solutions <a href='https://github.com/HikingDev/rustlings-solutions/blob/master/exercises/'>here</a>
 
 - Greetings and welcome to `rustlings`. This project contains small exercises to get you used to reading and writing Rust code. This includes reading and responding to compiler messages!
 
